@@ -1,0 +1,186 @@
+
+
+
+
+<!DOCTYPE  html>
+<html>
+<head>
+<!--this is the external CSS which is added as a link to the HTML page. it is controlling the page-->
+<link rel="stylesheet"  href="index.css">
+
+<title> welcome to My first page </title>
+
+</head>
+<body ng-app="">
+<style>
+body{
+ background: url(downloads.jpg);
+ background-image: url("background1.jpg");
+ background-repeat: no-repeat;
+ background-position: left top;
+} 
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: darkblue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: darkblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="hobbies.html">hobbies</a>
+  
+      <a href="ambitions.html">ambitions</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Experience <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="experience.html">work experience</a>
+     
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Education <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="education.html">education background</a>
+      <a href="skills.html">skills</a>
+      <a href="certification.html">certifications</a>
+     
+    </div>
+  </div>
+  <a href="contactfinal.html">Contact</a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+
+
+<br>
+<h2 align="center" > <b> Certifications</b></h2> 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+
+ <p align="center"> <b>Pick a Certification to view: </b></p>
+<br><br>
+<form align="center">
+  <input type="radio" ng-model="myVar" value="SQL">Querying Data with Transact-SQL
+  <input type="radio" ng-model="myVar" value="python">Introduction to Python for Data Science
+  <input type="radio" ng-model="myVar" value="Machine-Learning">Essential Math for Machine Learning: Python Edition
+</form>
+
+
+<div ng-switch="myVar">
+  <div ng-switch-when="SQL">
+    
+     <h2 align="center"><b> Querying Data with Transact-SQL</h2> <center><img src="sql.jpg" alt="Smiley face" height="300" width="200"></center>
+<p align="center">
+ From Microsoft
+<p>
+<P align="center">Completed on 12/21/2019</P>
+  </div>
+
+  <div ng-switch-when="python">
+     
+   
+<h2 align="center" > <b> Introduction to Python for Data Science</b></h2> <center><img src="python.jpg" alt="Smiley face" height="300" width="200"></center>
+<p align="center">
+ From Microsoft
+<p>
+<P align="center">Completed on 3/2/2020</P>	
+  </div>
+
+  <div ng-switch-when="Machine-Learning">
+     
+     <h2 align="center" > <b> Essential Math for Machine Learning: Python Edition</b></h2> <center><img src="math.jpg" alt="Smiley face" height="300" width="200"></center>
+<p align="center">
+ From Microsoft
+<p>
+<P align="center">Completed on 3/27/2020</P>
+
+  </div>
+</div>
+
+	
+
+<hr>
+
+
+<footer>
+  <p align="center">Posted by: Emile Tebulo</p>
+  <p align="center">Contact information: <a href="mailto:someone@example.com">emiletebulo@yahoo.com</a>.</p>
+  <p align="center">Copyright &copy;2020</p>
+</footer>
+
+
+</body>
+
+
+</html>

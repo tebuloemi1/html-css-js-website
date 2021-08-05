@@ -1,0 +1,227 @@
+
+
+
+
+
+<!DOCTYPE  html>
+<html>
+<head>
+<!--this is the external CSS which is added as a link to the HTML page. it is controlling the page-->
+<link rel="stylesheet"  href="index.css">
+
+<title> welcome to My first page </title>
+
+
+
+
+  <script type = "text/javascript">
+         <!--
+            if(document.images) {
+               var emi = new Image();     // Preload an image
+               emi.src = "emi.jpg";
+               var emi1 = new Image();     // Preload second image
+               emi1.src = "emi1.jpg";
+            }
+         //-->
+      </script>
+
+
+
+
+</head>
+<body>
+<style>
+body{
+ background: url(downloads.jpg);
+ background-image: url("background1.jpg");
+ background-repeat: no-repeat;
+ background-position: left top;
+} 
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: darkblue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: darkblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="hobbies.html">hobbies</a>
+  
+      <a href="ambitions.html">ambitions</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Experience <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="experience.html">work experience</a>
+     
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Education <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="education.html">education background</a>
+      <a href="skills.html">skills</a>
+      <a href="certification.html">certifications</a>
+     
+    </div>
+  </div>
+  <a href="contactfinal.html">Contact</a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+
+
+
+
+<h1 > <b> Welcome to my demostration webpage!</b></h1>
+
+<h3 style="color:grey"> This page has been made solery for the purpose of showcasing my skills that i got in HTML5 and CSS.<br>
+Please review and ask questions.</h3>
+<hr>
+<p> This webpage is showcasing the following skills:
+<ol>
+  <li> Adding images to the webpage. </li>
+  <li> Adding videos to the webpage. </li>
+  <li> Adding Videos to the webpage.  </li>
+  <li> Using Iframes in HTML5.   </li>
+  <li>Adding links in webpages.  </li>
+  <li> Using CSS to improve the appearance of the whole web site.</li>
+
+</ol>
+
+</p>
+
+
+<!-- this is my first link in this project-->
+
+<p> This is my first link in HTML5. It will take you to Home page.</p>
+
+
+<a href="home.html"> Try this link </a> <br>
+
+<!--this is my first image in this webpage project-->
+
+
+
+  <p>Want to play around with some <i><b>JavaScript</b></i>? Move your mouse over the image below to see the result.</p>
+      
+      <a href = "#" onMouseOver = "document.myImage.src = emi.src;"
+         onMouseOut = "document.myImage.src = emi1.src;">
+         <img name = "myImage" src = "emi1.jpg" />
+      </a>
+
+
+
+
+<!--this code displays a video clip, the video clip should be kept together(in a folder) with all webpage files-->
+
+<p> This is the normal video that has been added to webpage by  using  HTML5.  Please enjoy my video!</p>
+
+<video width="300"  height="250" controls>
+<source src ="vid1.mp4"  type= "video/mp4">
+<source src ="vid1.ogg"  type= "video/ogg">
+
+</video> <br>
+
+<br>
+<p> This is a video that has been taken from youtube and will be displayed in the iframe.<br>
+please enjoy the video!
+</p>
+
+<!-- this is  an iframe in html which displays a video from youtube in the  frame below-->
+<iframe width="300" height="250"
+src="https://www.youtube.com/embed/tgbNymZ7vqY"> 
+
+</iframe>
+
+
+<br>
+
+<p>want to check current time? click the button below.</p>
+ 
+<p id="demo"></p>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">check time now</button>
+
+
+<hr>
+
+
+<footer>
+  <p align="center">Posted by: Emile Tebulo</p>
+  <p align="center">Contact information: <a href="mailto:someone@example.com">emiletebulo@yahoo.com</a>.</p>
+<p align="center">Copyright &copy;2020</p>
+</footer>
+
+
+
+</body>
+
+
+</html>

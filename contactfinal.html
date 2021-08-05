@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE  html>
+<html>
+<head>
+<!--this is the external CSS which is added as a link to the HTML page. it is controlling the page-->
+<link rel="stylesheet"  href="index.css">
+
+<title> welcome to My first page </title>
+
+</head>
+<body>
+<style>
+body{
+ background: url(downloads.jpg);
+ background-image: url("background1.jpg");
+ background-repeat: no-repeat;
+ background-position: left top;
+} 
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: darkblue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: darkblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+
+
+
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="hobbies.html">hobbies</a>
+  
+      <a href="ambitions.html">ambitions</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Experience <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="experience.html">work experience</a>
+     
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Education <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="education.html">education background</a>
+      <a href="skills.html">skills</a>
+      <a href="certification.html">certifications</a>
+     
+    </div>
+  </div>
+  <a href="contactfinal.html">Contact</a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+
+
+
+<br>
+<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-full">
+						<h2 class="section-title" align="center">Let's get in touch</h2>
+						<div class="centered line"></div>
+					</div>
+				</div>
+
+				<div class="row section-content" align="center">
+					<div class="col-2-3 col-wrap centered text-center">
+						<div class="row">
+							<div class="col-full" style="margin-bottom: 100px;">
+								Do you want to have a chat?<br />
+                                                          Drop me an e-mail at emiletebulo@yahoo.com or simply fill out the form below and I will reply to you soon!								<input type="hidden" id="thank_you" value="Thank you for contacting me!" />
+							</div>
+						</div>
+						
+				                        <div id="form-contact-container" align="center">
+							<div class="col-full">
+								<input type="text" name="name" id="name" value="" placeholder="Name">
+							</div>
+							<div class="col-full">
+								<input type="text" name="email" id="email" value="" placeholder="E-mail address">
+							</div>
+							<div class="col-full">
+								<textarea name="message" id="message" rows="4" placeholder="Your message"></textarea>
+							</div>
+							<div class="col-full">
+								<button class="button button-medium button-submit ladda-button" data-style="expand-right" id="submit-contact">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><br><br><br><br><br><br>
+
+
+
+
+
+<hr>
+
+<footer>
+  <p align="center">Posted by: Emile Tebulo</p>
+  <p align="center">Contact information: <a href="mailto:someone@example.com">emiletebulo@yahoo.com</a>.</p>
+  <p align="center">Copyright &copy;2020</p>
+</footer>
+
+
+</body>
+
+
+</html>

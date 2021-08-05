@@ -1,0 +1,41 @@
+﻿
+
+  
+ .mypicturediv
+   {
+    border: 2px solid red;
+    outline: 2px dashed blue;
+    margin: 10px 5px;
+    padding:10px 20px;
+    height: 120px;
+    width: 90%;
+    background-image: url("background4.jpg");
+
+   }
+
+
+body
+  {
+   background-color:none;
+   font-size: 16px;
+   background-image: url("background1.jpg");
+   background-repeat: no-repeat;
+   background-position: left top;
+
+   }
+h1
+  { 
+    color: darkblue;
+ 
+   }
+h2
+  { 
+    color: blue;
+ 
+   }
+p   
+  { 
+   color: dimgray;
+   font-family: Arial narrow;
+   font-size:15px;
+   }

@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE  html>
+<html>
+<head>
+<!--this is the external CSS which is added as a link to the HTML page. it is controlling the page-->
+<link rel="stylesheet"  href="index.css">
+
+<title> welcome to My first page </title>
+
+</head>
+<body>
+<style>
+body{
+ background: url(downloads.jpg);
+ background-image: url("background1.jpg");
+ background-repeat: no-repeat;
+ background-position: left top;
+} 
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: darkblue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: darkblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="hobbies.html">hobbies</a>
+  
+      <a href="ambitions.html">ambitions</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Experience <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="experience.html">work experience</a>
+     
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Education <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="education.html">education background</a>
+      <a href="skills.html">skills</a>
+      <a href="certification.html">certifications</a>
+     
+    </div>
+  </div>
+  <a href="contactfinal.html">Contact</a>
+</div>
+
+<div style="padding:0 16px">
+</div>
+
+
+
+
+<br>
+<h1 > <b> My hobbies!</b></h1>
+<p>A hobby is a regular activity done for enjoyment, typically during one's leisure time, not professionally and not for pay.</p>
+<hr>
+<p>Here is a list of my hobbies:</p>
+
+<ol>
+<li>Sports – Walking, Exercise, Running, soccer, Bicycling, Team Sports etc</li>
+<li>Music – Listening </li>
+<li>Traveling</li>
+<li>Socializing – Community work, Church Activities, Volunteer Work</li>
+<li>Painting</li>
+<li>Dancing</li>
+<li>Reading, Writing</li>
+<li>Computer</li>
+<li>Gardening</li>
+<li>Animal Care</li>
+
+</ol>
+
+<br>
+
+
+<img src="hobbies.jpeg" alt="Smiley face" height="200" width="700"><br>
+
+
+
+<br>
+<hr>
+
+<footer>
+  <p align="center">Posted by: Emile Tebulo</p>
+  <p align="center">Contact information: <a href="mailto:someone@example.com">emiletebulo@yahoo.com</a>.</p>
+  <p align="center">Copyright &copy;2020</p>
+</footer>
+
+
+</body>
+</html>
